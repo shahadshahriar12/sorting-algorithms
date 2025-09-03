@@ -1,6 +1,5 @@
 #include <iostream>
 #include <vector>
-#include <iomanip>
 using namespace std;
 
 void sort(vector<int>& nums)
