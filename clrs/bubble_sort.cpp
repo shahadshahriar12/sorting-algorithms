@@ -43,32 +43,6 @@ int main()
 
 /*
 Algorithm (in words):
-Divide the array into sorted prefix (left) and unsorted suffix (right).
-For each position i in the array:
-Find the index of the minimum element in the unsorted part (A[i..n]).
-Swap it with A[i].
-Repeat until the entire array is sorted.
-
-Pseudocode:
-SELECTION-SORT(A)
-1  for i = 1 to A.length - 1
-2      min_index = i
-3      for j = i + 1 to A.length
-4          if A[j] < A[min_index]
-5              min_index = j
-6      exchange A[i] with A[min_index]
-
-
-Complexity & Properties:
-Best case: Θ(n²) (always scans the entire unsorted portion to find the minimum, even if the array is already sorted).
-Worst case: Θ(n²) (reverse sorted input, maximum swaps needed).
-Average case: Θ(n²).
-Space: O(1).
-Stable: ❌ No. (swapping may change the relative order of equal elements)
-In-place: ✅ Yes. (No extra arrays, just swapping within the original array.)
-
-*//*
-Algorithm (in words):
 Bubble Sort repeatedly steps through the array,
 compares adjacent elements, and swaps them if they are in the wrong order.
 After each pass, the largest unsorted element "bubbles up"
